@@ -1,0 +1,136 @@
+* {
+    box-sizing: inherit;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'header header'
+        'main right'
+        'footer footer';
+    gap: 20px;
+    padding: 10px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container > div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header {
+    grid-area: header;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+}
+
+.nate {
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: 120px;
+    width: 180px;
+}
+
+.nate-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nate-caption {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+.colored-aside {
+    color: #48BB78;
+}
+
+.about {
+    background-color: #E2E8F0;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    color: #718096;
+}
+
+.blog-para {
+    grid-area: main;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.blog-one-image {
+    float: right;
+    padding: 5px;
+    height: 220px;
+    width: 280px;
+}
+
+.blog-two-image {
+    float: left;
+    margin: 5px;
+    height: 220px;
+    width: 280px;
+}
+
+p {
+    font-size: 18px;
+    color: #2D3748;
+}
+
+main {
+    padding-right: 20px;
+}
+
+aside {
+    grid-area: right;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0; 
+    margin-left: 0;
+}
+
+li {
+    color: #4299E1;
+}
+
+footer {
+    padding: 20px;
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+}
+footer {
+    color: #FFFFFF !important;
+}
