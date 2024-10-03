@@ -33,6 +33,7 @@ html, body {
 header {
     grid-area: header;
     background-color: #63B3ED;
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -131,6 +132,6 @@ footer {
     color: #FFFFFF;
     text-align: center;
 }
-footer {
+footer p{
     color: #FFFFFF !important;
 }
