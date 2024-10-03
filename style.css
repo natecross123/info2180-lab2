@@ -88,17 +88,17 @@ h4 {
 }
 
 .blog-one-image {
-    float: right;
+    float: left;
     padding: 5px;
-    height: 220px;
-    width: 280px;
+    height: 140px;
+    width: 180px;
 }
 
 .blog-two-image {
     float: left;
     margin: 5px;
-    height: 220px;
-    width: 280px;
+    height: 120px;
+    width: 180px;
 }
 
 p {
